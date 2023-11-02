@@ -7,7 +7,7 @@ const Header = () => {
   const Location = useLocation(); 
   const [isMobileMenuOpen, setMobileMenuOpen]= useState(false);
   const toggleMenu =() =>{ 
-       setMobileMenuOpen(!isMobileMenuOpen)
+       setMobileMenuOpen(prev=> !prev) 
   };
   const isActive = (path) =>{  
     return Location.pathname === path 

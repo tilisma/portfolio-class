@@ -26,7 +26,7 @@ const Service = () => {
     <>
       <div className=" mt-10 mx-10 ">
         <h1 className="font-bold text-lg text-black text-center">Our Services</h1>
-        <div className='grid grid-cols-3 justify-center gap-4 mx-8'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-4 mx-8'>
         {serviceData.map((service, Index) => (
           <div className='flex flex-col justify-center items-center rounded-lg shadow-lg p-4 w-[300px]' key={Index}>
             <img className=' h-40 w-40 rounded-full onject-cover' src={serviceImage} alt="" />
