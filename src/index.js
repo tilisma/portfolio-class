@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import Service from "./pages/Service";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Profile from "./pages/Profile";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -18,7 +19,8 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/service" element={<Service />} />
+        <Route path="/service" element={<Service />} /> 
+        <Route path="/profile" element={<Profile />} /> 
       </Routes>
       <Footer />
     </BrowserRouter>

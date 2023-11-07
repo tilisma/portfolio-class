@@ -25,6 +25,7 @@ const Header = () => {
      <Link to = "/about" className={`font-semibold text-md text-red-500 hover:text-red-700 hover: border-b hover:border-b-2 ${isActive("/about")}`}>About</Link>   
      <Link to = "/service" className={`font-semibold text-md text-red-500 hover:text-red-700 hover: border-b hover:border-b-2 ${isActive("/service")}`}>Service</Link> 
      <Link to = "/contact" className={`font-semibold text-md text-red-500 hover:text-red-700 hover: border-b hover:border-b-2 ${isActive("/contact")}`}>Contact</Link> 
+     <Link to = "/profile" className={`font-semibold text-md text-red-500 hover:text-red-700 hover: border-b hover:border-b-2 ${isActive("/profile")}`}>Profile</Link>
  
    </div>
     

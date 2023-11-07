@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import contactImage from '../assests/image.jpeg' 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import axios from 'axios';
 
 const Contact = () => { 
   const [firstname, setFirstname]= useState("");
@@ -12,8 +13,17 @@ const Contact = () => {
   const [message, setMessage]= useState("");  
   const handleClick =  (e) => {   
     e.preventDefault(); 
-    if (firstname && lastname && phone && address && email && message){   
-    toast("Form Submit Sucessfully");  
+    if (firstname && lastname && phone && address && email && message ){   
+      const formdata = new FormData();
+      formdata.append("firstname",firstname);
+      formdata.append("lastname",lastname);
+      formdata.append("phone",phone);
+      formdata.append("address",address); 
+      formdata.append("email",email);
+      formdata.append("message",message); 
+      axios.post("https://achyut.acetechnepal.com/contact/",formdata)
+           .then(res=>toast("Form Submit Sucessfully"));
+
     setFirstname(""); 
     setLastname("");
     setPhone(""); 
