@@ -11,7 +11,7 @@ const Contact = () => {
   const [address, setAddress]= useState(""); 
   const [email, setEmail]= useState(""); 
   const [message, setMessage]= useState("");  
-  const handleClick =  (e) => {   
+  const handleClick =  (e) => {    
     e.preventDefault(); 
     if (firstname && lastname && phone && address && email && message ){   
       const formdata = new FormData();
@@ -21,11 +21,11 @@ const Contact = () => {
       formdata.append("address",address); 
       formdata.append("email",email);
       formdata.append("message",message); 
-      axios.post("https://achyut.acetechnepal.com/contact/",formdata)
-           .then(res=>toast("Form Submit Sucessfully"));
+      axios.post("https://achyut.acetechnepal.com/contact/",formdata) 
+           .then(res=>toast("Form Submit Sucessfully")); 
 
-    setFirstname(""); 
-    setLastname("");
+    setFirstname("");  
+    setLastname("");  
     setPhone(""); 
     setAddress(""); 
     setEmail(""); 

@@ -59,9 +59,9 @@ const Profile = () => {
                       alt="..."
                       src={profileimage}
                       className="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16  -ml-20 lg:-ml-16"
-                      style={{ maxWidth: "150px" }}
-                    />
-                  </div>
+                      style={{ maxWidth: "180px" }}  
+                    /> 
+                  </div> 
                 </div>
                 <div className="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center">
                   <div className="py-6 px-3 mt-32 sm:mt-0">
